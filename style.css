@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR&family=Noto+Serif+JP&family=Poppins&family=Work+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-size: 100%;
+    background-image: url(anime-art-black-and-white-naruto-manga-panels-wehoag4rj6zljng2\ 1.jpg);
+}
+
+
+
+header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    width: 6em;
+    margin-top: 1em;
+    margin-left: 6em;
+}
+
+
+.navigation {
+    display: flex;
+    gap: 5.2em;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18em;
+}
+
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    color: #D2D2D2;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #D2D2D2;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 1em;
+    margin-right: 3em;
+}
+
+
+.search,
+button {
+    background: transparent;
+    border: 0px;
+    color: #D2D2D2;
+    font-size: 1.1em;
+    margin-right: 1em;
+}
+
+
+::placeholder {
+    font-size: 1.2em;
+    color: #D2D2D2;
+}
+
+
+.search-box button {
+    cursor: pointer;
+}
+
+
+.search {
+    width: 11em;
+    outline: none;
+}
+
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 91vh;
+}
+
+
+.main .container {
+    position: relative;
+    margin-left: 16em;
+    margin-top: 15em;
+    height: fit-content;
+    padding: 1em;
+}
+
+
+.main .welcome {
+    text-transform: uppercase;
+    color: #E18309;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 0 0 15px #12100E;
+    width: fit-content;
+}
+
+
+.main .paragraph {
+    width: 75%;
+    font-size: 1.2em;
+    color: #D2D2D2;
+    margin-top: 1em;
+
+}
+
+
+.main .image {
+    margin-top: 2.3em;
+    margin-right: 10em;
+
+}
+
+
+.main img {
+    width: 45em;
+}
+
+
+.main .dots {
+    position: absolute;
+    display: flex;
+    gap: 1em;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 47em;
+    margin-left: 6em;
+}
+
+
+.dot {
+    height: 2.6em;
+    width: 2.6em;
+    background-color: #E18309;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 2px #434343;
+}
+
+
+.main .anime {
+    position: absolute;
+    display: flex;
+    margin-left: 44em;
+    margin-top: 35em;
+
+}
+
+
+.main .btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+
+.main .playbtn {
+    cursor: pointer;
+    width: 5.6em;
+    height: 5.6em;
+    border-radius: 100%;
+    background: #D2D2D2;
+    transition: .3s;
+
+}
+
+
+.playbtn:hover {
+    transform: scale(1.04);
+}
+
+
+.main i {
+    font-size: 2.2em;
+    color: #666666;
+    width: fit-content;
+}
+
+
+.main .anime .text {
+    margin-left: 7em;
+    color: #a1a1a1
+}
+
+
+.main .anime .title {
+    color: #D2D2D2;
+    text-transform: uppercase;
+}
+
+
+.page2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #090909;
+}
+
+
+.page2 .transparent {
+    position: absolute;
+    display: flex;
+    margin-top: 4em;
+    margin-left: 5em;
+    opacity: 15%;
+}
+
+
+.page2 .transparent h1 {
+    font-size: 15em;
+    color: #D2D2D2;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.page2 .title {
+    position: absolute;
+    display: flex;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    color: #D2D2D2;
+    margin-top: 5.5em;
+    margin-left: 6em;
+}
+
+
+.page2 .posters {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    gap: 3em;
+    margin-top: 18em;
+    margin-left: 12em;
+    cursor: pointer;
+    height: fit-content;
+}
+
+
+.page2 a,
+.first,
+.second,
+.third,
+.fourth {
+    position: relative;
+    display: flex;
+    border-radius: 0.2em;
+    box-shadow: 0 0 10px 2px #090909;
+    width: 20em;
+    height: 30em;
+    overflow: hidden;
+}
+
+
+.page2 .posters img {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+.page2 .first:hover img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+
+.page2 .second:hover img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+
+.page2 .third:hover img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+
+.page2 .fourth:hover img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+
+.page2 .posters .heading {
+    position: absolute;
+    display: flex;
+    text-transform: uppercase;
+    margin-left: .3em;
+    bottom: 0;
+    margin-bottom: 4.7em;
+    color: #fff;
+    text-shadow: 0px 0px 11px #000;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.page2 .posters .first:hover .heading,
+.page2 .posters .first:hover .text {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+.page2 .posters .second:hover .heading,
+.page2 .posters .second:hover .text {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.page2 .posters .third:hover .heading,
+.page2 .posters .third:hover .text {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.page2 .posters .fourth:hover .heading,
+.page2 .posters .fourth:hover .text {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.page2 .posters p {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    padding: .5em;
+    color: #fff;
+    text-shadow: 0px 0px 11px #000;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+
+.page2 .posters .icon {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin: 1em;
+    padding: 5px 10px 5px 10px;
+    border: 0px solid #D2D2D2;
+    background-color: #D2D2D2;
+    opacity: 95%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: 2F2F2F;
+    opacity: 0;
+    transition: .5s;
+    transform: translateX(-50px);
+}
+
+
+.page2 .posters i,
+.icon {
+    color: #2F2F2F;
+}
+
+
+.page2 .posters .first:hover .icon {
+    opacity: 95%;
+    transform: translateX(0px);
+}
+
+
+.page2 .posters .second:hover .icon {
+    opacity: 95%;
+    transform: translateX(0px);
+}
+
+
+.page2 .posters .third:hover .icon {
+    opacity: 95%;
+    transform: translateX(0px);
+}
+
+
+.page2 .posters .fourth:hover .icon {
+    opacity: 95%;
+    transform: translateX(0px);
+}
+
+
+.page2 .dots {
+    position: absolute;
+    margin-top: 53em;
+    margin-left: 100em;
+}
+
+
+.page3 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #090909;
+}
+
+
+.page3 .backtitle {
+    position: absolute;
+    display: flex;
+    margin-top: 2em;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 8em;
+    opacity: 10%;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.page3 .backtitle h1 {
+    font-size: 13em;
+    color: #D2D2D2;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.page3 .title {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    position: absolute;
+    color: #D2D2D2;
+    margin-left: 7em;
+    margin-top: 3em;
+    font-size: 2.1em;
+}
+
+
+.page3 .reviews {
+    position: relative;
+    display: flex;
+    margin-top: 12em;
+
+}
+
+
+.page3 .review {
+    position: absolute;
+    display: flex;
+    width: 40em;
+    height: 10em;
+    background: #D2D2D2;
+    border-radius: .5em;
+    transition: .3s;
+}
+
+
+.page3 .first {
+    margin-left: 13em;
+}
+
+
+.page3 .second {
+    margin-left: 62em;
+}
+
+
+.page3 .third {
+    margin-left: 13em;
+    margin-top: 13em;
+}
+
+
+.page3 .fourth {
+    margin-left: 62em;
+    margin-top: 13em;
+}
+
+
+.page3 .review img {
+    position: relative;
+    display: flex;
+    left: 0;
+    margin-top: .8em;
+    margin-left: 1em;
+    border-radius: 10%;
+    width: 8.5em;
+    height: 8.5em;
+    transition: .3s;
+}
+
+
+.page3 .review:hover {
+    transform: scale(1.02);
+    background: #b8b8b8;
+}
+
+
+.page3 .reviews .first:hover img {
+    box-shadow: 0px 0px 15px 0px #090909;
+}
+
+
+.page3 .reviews .second:hover img {
+    box-shadow: 0px 0px 15px 0px #090909;
+}
+
+
+.page3 .reviews .third:hover img {
+    box-shadow: 0px 0px 15px 0px #090909;
+}
+
+
+.page3 .reviews .fourth:hover img {
+    box-shadow: 0px 0px 15px 0px #090909;
+}
+
+
+.page3 .reviews .info {
+    position: absolute;
+    display: flex;
+    padding: 1em;
+    margin-top: .3px;
+    margin-left: 9.5em;
+    color: #090909;
+}
+
+
+.page3 .reviews .info h3 {
+    display: flex;
+    height: fit-content;
+    width: 15em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+.page3 .reviews .comment {
+    position: absolute;
+    width: 24em;
+    margin-top: 2.2em;
+    margin-left: 0em;
+    font-size: 1.1em;
+}
+
+
+.page3 .icons .go {
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    margin-bottom: .5em;
+    margin-right: 0.5em;
+}
+
+
+.page3 .icons .rating {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    gap: .2em;
+    justify-content: center;
+    align-items: center;
+    padding: .18em .5em;
+    font-size: .9em;
+    background: #2F2F2F;
+    border-radius: .3em;
+    color: #D2D2D2;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+
+
+.page3 .review:hover .rating {
+    opacity: 95%;
+    transform: scale(1);
+}
+
+
+.page3 .icons a {
+    text-decoration: none;
+    color: #090909;
+    transition: .3s;
+}
+
+
+.page3 a:hover {
+    color: #2F81E8;
+    text-decoration: underline;
+}
+
+
+.footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background: #0b0b0b;
+}
+
+
+.footer .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.footer .developer {
+    position: relative;
+    display: flex;
+    gap: .5em;
+    width: fit-content;
+}
+
+
+.footer .inc {
+    width: 6em;
+}
+
+
+.footer .developer .info {
+    margin-top: .5em;
+    color: #D2D2D2;
+}
+
+
+.footer .developer .text {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+
+.footer .contacts h1 {
+    color: #D2D2D2;
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+
+
+.footer .contacts {
+    position: relative;
+    font-size: 1.1em;
+}
+
+
+.footer .contact a {
+    text-decoration: none;
+    color: #D2D2D2;
+}
+
+
+.footer .contact {
+    display: flex;
+    align-items: center;
+    ;
+    gap: .4em;
+    color: #D2D2D2;
+}
+
+
+.footer .contact a:hover {
+    color: #2F81E8;
+    text-decoration: underline;
+}
+
+
+.footer .message {
+    position: relative;
+    width: fit-content;
+}
+
+
+.footer .message h1 {
+    display: flex;
+    justify-content: center;
+    color: #D2D2D2;
+    font-size: 1.3em;
+}
+
+
+.footer .message .form-group {
+    margin: 1em;
+    background: transparent;
+    left: 0;
+}
+
+
+.footer .message .form-control {
+    border: 0px;
+    outline: none;
+    border-radius: 1em;
+    padding: 1em;
+    background: #090909;
+    width: 20em;
+    font-size: .9em;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+
+.footer .form-group ::placeholder {
+    color: #5c5c5c;
+}
+
+
+.footer .message input {
+    transition: .5s;
+}
+
+
+.footer .message .form-group input:focus {
+    background: #D2D2D2;
+}
+
+
+.footer .message .button {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+
+.footer .message .button h3 {
+    font-size: 1.5em;
+    font-family: 'Noto Serif JP', serif;
+    color: #5c5c5c;
+}
+
+
+.footer .message button {
+    margin-left: .9em;
+    border: 0px;
+    cursor: pointer;
+    padding: .2em 1em;
+    background: #D2D2D2;
+    color: #090909;
+    font-size: 1.3em;
+    border-radius: .4em;
+    display: flex;
+    transition: .5s;
+}
+
+
+.footer .message button:hover {
+    transform: scale(1.1);
+}
