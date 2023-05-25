@@ -488,7 +488,7 @@ button {
 }
 
 
-.page3 .reviews {
+.page3 .animes {
     position: relative;
     display: flex;
     margin-top: 12em;
@@ -496,7 +496,7 @@ button {
 }
 
 
-.page3 .review {
+.page3 .anime {
     position: absolute;
     display: flex;
     width: 40em;
@@ -529,7 +529,7 @@ button {
 }
 
 
-.page3 .review img {
+.page3 .anime img {
     position: relative;
     display: flex;
     left: 0;
@@ -542,33 +542,33 @@ button {
 }
 
 
-.page3 .review:hover {
+.page3 .anime:hover {
     transform: scale(1.02);
     background: #b8b8b8;
 }
 
 
-.page3 .reviews .first:hover img {
+.page3 .animes .first:hover img {
     box-shadow: 0px 0px 15px 0px #090909;
 }
 
 
-.page3 .reviews .second:hover img {
+.page3 .animes .second:hover img {
     box-shadow: 0px 0px 15px 0px #090909;
 }
 
 
-.page3 .reviews .third:hover img {
+.page3 .animes .third:hover img {
     box-shadow: 0px 0px 15px 0px #090909;
 }
 
 
-.page3 .reviews .fourth:hover img {
+.page3 .animes .fourth:hover img {
     box-shadow: 0px 0px 15px 0px #090909;
 }
 
 
-.page3 .reviews .info {
+.page3 .animes .info {
     position: absolute;
     display: flex;
     padding: 1em;
@@ -578,7 +578,7 @@ button {
 }
 
 
-.page3 .reviews .info h3 {
+.page3 .animes .info h3 {
     display: flex;
     height: fit-content;
     width: 15em;
@@ -587,7 +587,7 @@ button {
 }
 
 
-.page3 .reviews .comment {
+.page3 .animes .comment {
     position: absolute;
     width: 24em;
     margin-top: 2.2em;
@@ -627,7 +627,7 @@ button {
 }
 
 
-.page3 .review:hover .rating {
+.page3 .anime:hover .rating {
     opacity: 95%;
     transform: scale(1);
 }
