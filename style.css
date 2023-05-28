@@ -9,6 +9,11 @@
 }
 
 
+html{
+      scroll-behavior: smooth;
+}
+
+
 body {
     background-size: 100%;
     background-image: url(anime-art-black-and-white-naruto-manga-panels-wehoag4rj6zljng2\ 1.jpg);
